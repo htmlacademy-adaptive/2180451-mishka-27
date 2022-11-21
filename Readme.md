@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Джантемир Ешев](https://up.htmlacademy.ru/adaptive/27/user/2180451).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Нюкало](https://htmlacademy.ru/profile/nyukalopavel).
 
 ---
 
