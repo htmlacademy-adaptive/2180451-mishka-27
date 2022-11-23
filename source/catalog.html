@@ -2,16 +2,15 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Интернет-магазин игрушек ручной работы</title>
+  <title>Document</title>
 </head>
-
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина игрушек ручной работы.">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle toggle" type="button">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
@@ -39,76 +38,56 @@
     </nav>
   </header>
 
-  <main class="main-container">
-    <section class="intro intro--main-background">
-      <h1 class="intro__title intro-title">Милые штуки ручной работы для дома</h1>
-      <a class="intro__link link intro__link--interior" href="">Предметы интерьера</a>
-      <a class="intro__link link intro__link--toys" href="">Детские игрушки</a>
-    </section>
+  <main class="catalog-container">
+    <div class="intro-inner intro-form--background">
+      <h1 class="intro-inner__title intro-title">Каталог товаров</h1>
+    </div>
 
-    <section class="product-card">
-      <h2 class="product-card__title product-card-title">Вязаные корзинки</h2>
-      <p class="product-card__subtitle product-card-subtitle">ТОВАР НЕДЕЛИ</p>
-      <p class="product-card__description product-card-description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-      <ul class="product-card__feature-list feature-list">
-        <li class="feature-list__item">Цвет:</li>
-        <li class="feature-list__item">тиффани/серый</li>
-        <li class="feature-list__item">Диаметр:</li>
-        <li class="feature-list__item">25 см</li>
-        <li class="feature-list__item">Высота:</li>
-        <li class="feature-list__item">15 см</li>
-      </ul>
-      <img class="product-card__image"  src="img/basket-image.png" width="260" height="315" alt="Три вязанные двухцветные корзинки положенные друг в друга.">
-      <p class="product-card__price">Цена: 990 руб.</p>
-      <button class="product-card__button button">Заказать</button>
-    </section>
-
-    <section class="about-us">
-      <h2 class="about-us__title">Коротко о нас:</h2>
-      <ul class="about-us__advantage-list advantage-list">
-        <li class="advantage-list__item advantage-list__item--flower-icon">Экологически чистые материалы</li>
-        <li class="advantage-list__item advantage-list__item--money-icon">Скандинавский стиль по российской цене</li>
-        <li class="advantage-list__item advantage-list__item--like-icon">Увеличивает лайки на фотографиях</li>
-        <li class="advantage-list__item advantage-list__item--thread-icon">Связано вручную с любовью и умилением</li>
-        <li class="advantage-list__item advantage-list__item--rocket-icon">Поддержка отечественного производителя</li>
-        <li class="advantage-list__item advantage-list__item--gift-icon">Поставляется в подарочной упаковке</li>
-      </ul>
-    </section>
-
-    <section class="reviews">
-      <div class="reviews__wrapper slider">
-        <h2 class="reviews__title review-title">Отзывы</h2>
-        <ul class="reviews__list slider-list">
-          <li class="slider-list__item slider-item">
-            <p class="slider-list__text slider-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <p class="slider-list__author-name slider-author-name">Анастасия Красильникова</p>
-            <p class="slider-list__author-username slider-author-username">@missssssiskras</p>
-          </li>
-        </ul>
-      </div>
-      <div class="reviews__buttons-wrapper slider-button-wrapper">
-        <button class="reviews__button slider-button--prev">
-          <span class="visually-hidden">Предыдущий отзыв</span>
-        </button>
-        <button class="reviews__button slider-button--next">
-          <span class="visually-hidden">Следующий отзыв</span>
-        </button>
-      </div>
-      <button class="reviews__button button button--write-review">Написать</button>
-    </section>
-
-    <section class="contacts">
-      <h2 class="contacts__title contact-title">Контакты</h2>
-      <ul class="contacts__contact-list contact-list">
-        <li class="contact-list__item contact-item">e-mail:</li>
-        <li class="contact-list__item contact-item">
-          <a href="mailto:info@mimimishkashop.ru" class="contact-list__link contact-link">info@mimimishkashop.ru</a>
+    <section class="product-catalog">
+      <ul class="product-catalog__list catalog-list">
+        <li class="product-catalog__item catalog-item">
+          <img class="product-catalog__image" src="img/catalog-bunny.png" width="265" height="195" alt="Фигурка вязанного зайчика.">
+          <h2 class="product-catalog__name catalog-name">Зайчик-попрыгайчик</h2>
+          <p class="product-catalog__info catalog-info">Рост 30 см, вес 200 г</p>
+          <div class="product-catalog__wrapper shopping-wrapper">
+            <p class="product-catalog-__price shopping-price">1 200 руб.</p>
+            <button class="product-catalog__add-basket shopping-basket">
+              <span class="visually-hidden">Добавить в корзину.</span>
+            </button>
+          </div>
         </li>
-        <li class="contact-list__item contact-item">адрес:</li>
-        <li class="contact-list__item contact-item">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</li>
+        <li class="product-catalog__item catalog-item">
+          <img class="product-catalog__image" src="img/catalog-laundry-basket.png" width="265" height="195" alt="Вязанная корзина со скрученными в рулон полотенцами внутри.">
+          <h2 class="product-catalog__name catalog-name">Корзинка для белья</h2>
+          <p class="product-catalog__info catalog-info">Диаметр 15 см, высота 10 см</p>
+          <div class="product-catalog__wrapper shopping-wrapper">
+            <p class="product-catalog-__price shopping-price">690 руб.</p>
+            <button class="product-catalog__add-basket shopping-basket">
+              <span class="visually-hidden">Добавить в корзину.</span>
+            </button>
+          </div>
+        </li>
+        <li class="product-catalog__item catalog-item">
+          <img class="product-catalog__image" src="img/catalog-toy-basket.png" width="265" height="195" alt="Вязанная корзина с игрушками внутри.">
+          <h2 class="product-catalog__name catalog-name">Большая корзинка для игрушек</h2>
+          <p class="product-catalog__info catalog-info">Диаметр 30 см, высота 30 см</p>
+          <div class="product-catalog__wrapper shopping-wrapper">
+            <p class="product-catalog-__price shopping-price">1 500 руб.</p>
+            <button class="product-catalog__add-basket shopping-basket">
+              <span class="visually-hidden">Добавить в корзину.</span>
+            </button>
+          </div>
+        </li>
       </ul>
-      <img class="contacts__map"  src="" width="320" height="454" alt="Карта с расположением магазина.">
-      <button class="contacts__button button button--write-us">Напишите нам</button>
+    </section>
+
+    <section class="production">
+      <h2 class="production__title production-title">Процесс производства</h2>
+      <div class="production__video video">
+        <img class="video__frame" src="img/video-basket.png" width="260" height="150" alt="Вязанная двухцветная корзина.">
+      </div>
+      <p class="production__description production-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <button class="production__button button button--make-order">Сделать заказ</button>
     </section>
   </main>
 
