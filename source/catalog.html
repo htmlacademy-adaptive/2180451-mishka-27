@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Каталог товаров</title>
 </head>
 
 <body class="page__body">
@@ -25,12 +25,12 @@
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <button class="user-list__button user-list__button--search">
+            <button class="user-list__button user-list__button--search" type="button">
               Поиск по сайту
             </button>
           </li>
           <li class="user-list__item">
-            <button class="user-list__button user-list__button--basket">
+            <button class="user-list__button user-list__button--basket" type="button">
               Корзина: пока пуста
             </button>
           </li>
@@ -47,34 +47,40 @@
     <section class="product-catalog">
       <ul class="product-catalog__list">
         <li class="product-catalog__item">
-          <img class="product-catalog__image" src="img/catalog-bunny.png" width="265" height="195" alt="Фигурка вязанного зайчика.">
-          <h2 class="product-catalog__name">Зайчик-попрыгайчик</h2>
+          <a class="product-catalog__item-link" href="#">
+            <img class="product-catalog__image" src="img/catalog-bunny.png" width="265" height="195" alt="Фигурка вязанного зайчика.">
+            <h2 class="product-catalog__name">Зайчик-попрыгайчик</h2>
+          </a>
           <p class="product-catalog__info">Рост 30 см, вес 200 г</p>
           <div class="product-catalog__wrapper">
             <p class="product-catalog__price">1 200 руб.</p>
-            <button class="product-catalog__button">
+            <button class="product-catalog__button" type="button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </div>
         </li>
         <li class="product-catalog__item">
-          <img class="product-catalog__image" src="img/catalog-laundry-basket.png" width="265" height="195" alt="Вязанная корзина со скрученными в рулон полотенцами внутри.">
-          <h2 class="product-catalog__name">Корзинка для белья</h2>
+          <a href="" class="product-catalog__item-link" href="#">
+            <img class="product-catalog__image" src="img/catalog-laundry-basket.png" width="265" height="195" alt="Вязанная корзина со скрученными в рулон полотенцами внутри.">
+           <h2 class="product-catalog__name">Корзинка для белья</h2>
+          </a>
           <p class="product-catalog__info">Диаметр 15 см, высота 10 см</p>
           <div class="product-catalog__wrapper">
             <p class="product-catalog__price">690 руб.</p>
-            <button class="product-catalog__button">
+            <button class="product-catalog__button" type="button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </div>
         </li>
         <li class="product-catalog__item catalog-item">
-          <img class="product-catalog__image" src="img/catalog-toy-basket.png" width="265" height="195" alt="Вязанная корзина с игрушками внутри.">
-          <h2 class="product-catalog__name catalog-name">Большая корзинка для игрушек</h2>
+          <a href="" class="product-catalog__item-link" href="#">
+            <img class="product-catalog__image" src="img/catalog-toy-basket.png" width="265" height="195" alt="Вязанная корзина с игрушками внутри.">
+            <h2 class="product-catalog__name catalog-name">Большая корзинка для игрушек</h2>
+          </a>
           <p class="product-catalog__info catalog-info">Диаметр 30 см, высота 30 см</p>
           <div class="product-catalog__wrapper shopping-wrapper">
             <p class="product-catalog__price">1 500 руб.</p>
-            <button class="product-catalog__button">
+            <button class="product-catalog__button" type="button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </div>
@@ -88,7 +94,7 @@
         <img class="production__video-frame" src="img/video-basket.png" width="260" height="150" alt="Вязанная двухцветная корзина.">
       </div>
       <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <button class="production__button button-secondary">Сделать заказ</button>
+      <button class="production__button button-secondary" type="button">Сделать заказ</button>
     </section>
   </main>
 
@@ -115,7 +121,7 @@
     </ul>
     <div class="copyright">
       <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none"><path fill="#63D1BB" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/></svg>
         <span class="visually-hidden">Сайт html академии.</span>
       </a>

@@ -25,12 +25,12 @@
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <button class="user-list__button user-list__button--search">
+            <button class="user-list__button user-list__button--search" type="button">
               Поиск по сайту
             </button>
           </li>
           <li class="user-list__item">
-            <button class="user-list__button user-list__button--basket">
+            <button class="user-list__button user-list__button--basket" type="button">
               Корзина: пока пуста
             </button>
           </li>
@@ -48,19 +48,19 @@
 
     <section class="product-card">
       <h2 class="product-card__title">Вязаные корзинки</h2>
-      <p class="product-card__subtitle">ТОВАР НЕДЕЛИ</p>
+      <p class="product-card__subtitle">Товар недели</p>
       <p class="product-card__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-      <ul class="product-card__feature-list feature-list">
-        <li class="feature-list__item">Цвет:</li>
-        <li class="feature-list__item">тиффани/серый</li>
-        <li class="feature-list__item">Диаметр:</li>
-        <li class="feature-list__item">25 см</li>
-        <li class="feature-list__item">Высота:</li>
-        <li class="feature-list__item">15 см</li>
-      </ul>
+      <dl class="product-card__feature-list feature-list">
+        <dt class="feature-list__item">Цвет:</dt>
+        <dd class="feature-list__item">тиффани/серый</dd>
+        <dt class="feature-list__item">Диаметр:</dt>
+        <dd class="feature-list__item">25 см</dd>
+        <dt class="feature-list__item">Высота:</dt>
+        <dd class="feature-list__item">15 см</dd>
+      </dl>
       <img class="product-card__image"  src="img/basket-image.png" width="260" height="315" alt="Три вязанные двухцветные корзинки положенные друг в друга.">
       <p class="product-card__price">Цена: 990 руб.</p>
-      <button class="button-primary">Заказать</button>
+      <button class="button-primary" type="button">Заказать</button>
     </section>
 
     <section class="about-us">
@@ -94,19 +94,19 @@
           <span class="visually-hidden">Следующий отзыв</span>
         </button>
       </div>
-      <button class="button-primary">Написать</button>
+      <a class="button-primary" href="#">Написать</a>
     </section>
 
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
-      <ul class="contacts__list">
-        <li class="contacts__item">e-mail:</li>
-        <li class="contacts__item">
+      <dl class="contacts__list">
+        <dt class="contacts__item">e-mail:</dt>
+        <dd class="contacts__item">
           <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        </li>
-        <li class="contacts__item">адрес:</li>
-        <li class="contacts__item">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</li>
-      </ul>
+        </dd>
+        <dt class="contacts__item">адрес:</dt>
+        <dd class="contacts__item">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
+      </dl>
       <img class="contacts__map"  src="img/map.png" width="320" height="454" alt="Карта с расположением магазина.">
       <button class="button-primary">Напишите нам</button>
     </section>
@@ -135,7 +135,7 @@
     </ul>
     <div class="copyright">
       <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none"><path fill="#63D1BB" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/></svg>
         <span class="visually-hidden">Сайт html академии.</span>
       </a>
