@@ -1,0 +1,47 @@
+.user-list {
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  list-style-type: none;
+}
+
+.user-list__item {
+  border-bottom: 1px solid #ececec;
+}
+
+.user-list__button {
+  position: relative;
+  padding: 27px 32px 28px 76px;
+  margin: 0;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 32px;
+    top: 50%;
+    height: 18px;
+    transform: translateY(-50%);
+  }
+
+  &--search::before {
+    width: 18px;
+    background-image: url("../img/search-icon.svg");
+  }
+
+  &--basket::before {
+    width: 21px;
+    background-image: url("../img/cart-icon.svg");
+  }
+}
