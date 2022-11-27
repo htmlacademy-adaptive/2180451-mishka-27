@@ -5,5 +5,4 @@ for(let catalogButtons of catalogButton) {
   catalogButtons.onclick = function () {
     catalogModal.classList.toggle("catalog-modal--hidden");
   };
-};
-
+}
