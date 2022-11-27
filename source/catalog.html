@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог товаров</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -14,7 +15,7 @@
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper main-nav__wrapper--popover">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="catalog.html">Каталог товаров</a>
@@ -48,7 +49,7 @@
       <ul class="product-catalog__list">
         <li class="product-catalog__item">
           <a class="product-catalog__item-link" href="#">
-            <img class="product-catalog__image" src="img/catalog-bunny.png" width="265" height="195" alt="Фигурка вязанного зайчика.">
+            <img class="product-catalog__image" src="img/catalog-bunny.png" width="258" height="195" alt="Фигурка вязанного зайчика.">
             <h2 class="product-catalog__name">Зайчик-попрыгайчик</h2>
           </a>
           <p class="product-catalog__info">Рост 30 см, вес 200 г</p>
@@ -61,7 +62,7 @@
         </li>
         <li class="product-catalog__item">
           <a class="product-catalog__item-link" href="#">
-            <img class="product-catalog__image" src="img/catalog-laundry-basket.png" width="265" height="195" alt="Вязанная корзина со скрученными в рулон полотенцами внутри.">
+            <img class="product-catalog__image" src="img/catalog-laundry-basket.png" width="258" height="195" alt="Вязанная корзина со скрученными в рулон полотенцами внутри.">
             <h2 class="product-catalog__name">Корзинка для белья</h2>
           </a>
           <p class="product-catalog__info">Диаметр 15 см, высота 10 см</p>
@@ -74,7 +75,7 @@
         </li>
         <li class="product-catalog__item catalog-item">
           <a class="product-catalog__item-link" href="#">
-            <img class="product-catalog__image" src="img/catalog-toy-basket.png" width="265" height="195" alt="Вязанная корзина с игрушками внутри.">
+            <img class="product-catalog__image" src="img/catalog-toy-basket.png" width="258" height="195" alt="Вязанная корзина с игрушками внутри.">
             <h2 class="product-catalog__name catalog-name">Большая корзинка для игрушек</h2>
           </a>
           <p class="product-catalog__info catalog-info">Диаметр 30 см, высота 30 см</p>
@@ -89,12 +90,14 @@
     </section>
 
     <section class="production">
-      <h2 class="production__title">Процесс производства</h2>
-      <div class="production__video">
-        <img class="production__video-frame" src="img/video-basket.png" width="260" height="150" alt="Вязанная двухцветная корзина.">
+      <div class="production__wrapper">
+        <h2 class="production__title">Процесс производства</h2>
+        <div class="production__video">
+          <img class="production__video-frame" src="img/video-basket.png" width="258" height="150" alt="Вязанная двухцветная корзина.">
+        </div>
+        <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <button class="production__button" type="button">Сделать заказ</button>
       </div>
-      <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <button class="production__button button-secondary" type="button">Сделать заказ</button>
     </section>
   </main>
 
@@ -127,5 +130,39 @@
       </a>
     </div>
   </footer>
+
+  <div class="catalog-modal catalog-modal--hidden">
+    <div class="catalog-modal__wrapper">
+      <h2 class="catalog-modal__title">Добавить в корзину</h2>
+      <form class="catalog-modal__form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="catalog-modal__fieldset">
+          <legend class="catalog-modal__legend">Выберите размер:</legend>
+          <ul class="catalog-modal__size-list size-list">
+            <li class="size-list__item">
+              <label class="size-list__control">
+                <input class="size-list__input" type="checkbox" name="product size" value="Small" checked>
+                <span class="size-list__control-mark">s</span>
+              </label>
+            </li>
+            <li class="size-list__item">
+              <label class="size-list__control">
+                <input class="size-list__input" type="checkbox" name="product size" value="Medium">
+                <span class="size-list__control-mark">m</span>
+              </label>
+            </li>
+            <li class="size-list__item">
+              <label class="size-list__control">
+                <input class="size-list__input" type="checkbox" name="product size" value="Large">
+                <span class="size-list__control-mark">l</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="catalog-modal__button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </div>
+  <script src="./js/menu-button.js"></script>
+  <script src="./js/catalog-modal.js"></script>
 </body>
 </html>

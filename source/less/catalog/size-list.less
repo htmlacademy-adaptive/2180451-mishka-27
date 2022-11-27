@@ -1,0 +1,45 @@
+.size-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.size-list__control {
+  display: block;
+  position: relative;
+}
+
+.size-list__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.size-list__control-mark {
+  margin-top: 22px;
+  padding: 16px 0;
+  display: block;
+  box-sizing: border-box;
+  width: 80px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444444;
+  background-color: #ffffff;
+  border: 2px solid lighten(#444444, 60%);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.size-list__input:checked + .size-list__control-mark {
+  border: 2px solid #63d1bb;
+}
