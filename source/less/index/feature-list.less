@@ -1,0 +1,26 @@
+.feature-list {
+  margin: 0 0 28px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 97px auto;
+  grid-template-rows: repeat(3, 40px);
+  align-items: center;
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.feature-list__item {
+  position: relative;
+  margin: 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 32px;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #ececec;
+  }
+}
