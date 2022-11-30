@@ -1,9 +1,23 @@
 .about-us {
   padding: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 55px 50px 83px;
+  }
 }
 
 .about-us__title {
   margin: 0 0 28px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 42px;
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: 700;
+  }
 }
 
 .about-us__list {
@@ -13,6 +27,14 @@
   line-height: 20px;
   font-weight: 700;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .about-us__item {
@@ -44,5 +66,33 @@
 
   &--gift-icon {
     background: url("../img/gift-icon.svg") no-repeat left top;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 320px;
+
+    &--flower-icon {
+      order: 1;
+    }
+
+    &--money-icon {
+      order: 3;
+    }
+
+    &--heart-icon {
+      order: 5;
+    }
+
+    &--thread-icon {
+      order: 2;
+    }
+
+    &--rocket-icon {
+      order: 4;
+    }
+
+    &--gift-icon {
+      order: 6;
+    }
   }
 }

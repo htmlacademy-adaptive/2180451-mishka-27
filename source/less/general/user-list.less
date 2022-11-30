@@ -1,19 +1,27 @@
 .user-list {
   margin: 0;
   padding: 0;
-  width: 320px;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .user-list__item {
+  background-color: #ffffff;
   border-bottom: 1px solid #ececec;
+
+  @media (min-width: @tablet-width) {
+    border-left: 1px solid #ececec;
+    border-bottom: none;
+    height: 88px;
+  }
 }
 
 .user-list__button {
-  position: relative;
   padding: 27px 32px 28px 76px;
   margin: 0;
-  width: 100%;
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
   line-height: 24px;
@@ -25,23 +33,24 @@
   border: none;
   cursor: pointer;
 
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    left: 32px;
-    top: 50%;
-    height: 18px;
-    transform: translateY(-50%);
+  &--search {
+    @media (min-width: @tablet-width) {
+      font-size: 0;
+      padding: 36px 32px 34px 33px;
+    }
+
+    background: url("../img/search-icon.svg") no-repeat 32px center;
   }
 
-  &--search::before {
-    width: 18px;
-    background-image: url("../img/search-icon.svg");
+  &--basket {
+    background: url("../img/cart-icon.svg") no-repeat 30px center;
   }
 
-  &--basket::before {
-    width: 21px;
-    background-image: url("../img/cart-icon.svg");
+  @media (min-width: @tablet-width) {
+    padding: 32px 0 32px 81px;
+
+    &--basket {
+      background: url("../img/cart-icon.svg") no-repeat 31px center;
+    }
   }
 }

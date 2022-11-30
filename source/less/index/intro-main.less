@@ -2,9 +2,14 @@
   padding-top: 73px;
   display: flex;
   flex-direction: column;
-  background-image: url("../img/intro-font.png");
-  background-position-y: -17px;
-  background-color: #f1f1f1;
+  background: url("../img/intro-font.png") no-repeat center -17px;
+  background-color: #f9f9f9;
+
+  @media (min-width: @tablet-width) {
+    padding: 155px 50px 0;
+    background: url("../img/intro-font-tablet.png") no-repeat center -17px;
+    background-color: #f9f9f9;
+  }
 }
 
 .intro-main__title {
@@ -15,6 +20,22 @@
   line-height: 30px;
   font-weight: 700;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 372px;
+  }
+}
+
+.intro-main__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    flex-direction: row;
+  }
 }
 
 .intro-main__link {
@@ -25,6 +46,14 @@
   text-decoration: none;
   color: #ffffff;
 
+  @media (min-width: @tablet-width) {
+    padding: 25px 36px 34px;
+    width: calc(50% - 50px);
+    font-size: 20px;
+    line-height: 30px;
+    z-index: 1;
+  }
+
   &--interior {
     background: url("../img/interior-icon.svg") no-repeat right 36px center;
     background-color: #63d1bb;
@@ -33,5 +62,19 @@
   &--toys {
     background: url("../img/toy-icon.svg") no-repeat right 27px center;
     background-color: #56c3b2;
+  }
+}
+
+.intro-main__zigzag-line {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    display: block;
+    left: -50px;
+    bottom: -17px;
+    height: 34px;
+    width: calc(100% + 100px);
+    background-image: url("../../img/zigzag-fill-tablet.svg");
+    background-repeat: repeat-x;
+    z-index: 2;
   }
 }

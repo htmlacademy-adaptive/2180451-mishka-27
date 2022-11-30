@@ -1,5 +1,10 @@
 .contacts {
   padding: 38px 30px 38px;
+
+  @media (min-width: @tablet-width) {
+    padding: 68px 50px 57px;
+    background: url("../../img/flag-icon.svg") no-repeat top 68px right 50px;
+  }
 }
 
 .contacts__title {
@@ -7,6 +12,12 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 49px;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .contacts__list {
@@ -19,6 +30,16 @@
   font-size: 15px;
   line-height: 30px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    margin-right: auto;
+    margin-bottom: 49px;
+    display: grid;
+    width: 668px;
+    grid-template-columns: auto auto auto 257px;
+    grid-template-rows: min-content;
+    font-size: 17px;
+  }
 }
 
 .contacts__item {
@@ -39,4 +60,10 @@
     top: 23px;
     background-color: #62d1ba;
   }
+}
+
+.contacts a:last-child {
+  margin: 0 auto;
+  width: 230px;
+  font-size: 17px;
 }

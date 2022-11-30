@@ -6,9 +6,17 @@
 .page__body {
   margin: 0 auto;
   display: flex;
+  min-width: 320px;
   flex-direction: column;
-  width: 320px;
   min-height: 100%;
   font-family: "Open Sans", sans-serif;
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+  }
 }
