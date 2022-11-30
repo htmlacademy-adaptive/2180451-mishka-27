@@ -1,5 +1,6 @@
 .intro-main {
   padding-top: 73px;
+  position: relative;
   display: flex;
   flex-direction: column;
   background: url("../img/intro-font.png") no-repeat center -17px;
@@ -62,6 +63,20 @@
   &--toys {
     background: url("../img/toy-icon.svg") no-repeat right 27px center;
     background-color: #56c3b2;
+  }
+}
+
+.intro-main__free-delivery {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 21px;
+    right: 50px;
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
   }
 }
 
