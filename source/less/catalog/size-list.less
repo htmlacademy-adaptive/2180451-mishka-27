@@ -4,6 +4,11 @@
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 350px;
+  }
 }
 
 .size-list__control {
@@ -38,6 +43,10 @@
   border: 2px solid lighten(#444444, 60%);
   transform: translateY(-50%);
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 112px;
+  }
 }
 
 .size-list__input:checked + .size-list__control-mark {

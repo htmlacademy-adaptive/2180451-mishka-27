@@ -29,6 +29,14 @@
             <a href="form.html">Вязание на заказ</a>
           </li>
         </ul>
+        <ul class="main-nav__news-sale-list">
+          <li class="main-nav__news-sale-item">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="main-nav__news-sale-item">
+            <a href="#">Распродажа</a>
+          </li>
+        </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
             <button class="user-list__button user-list__button--search" type="button">
@@ -68,13 +76,13 @@
         <dt class="feature-list__item">Высота:</dt>
         <dd class="feature-list__item">15 см</dd>
       </dl>
-      <picture class="product-card__picture">
-        <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.png" width="525" height="636">
-        <source media="(min-width: 768px)" srcset="img/triple-set-tablet.png" width="334" height="404">
+      <picture>
+        <source class="product-card__image" media="(min-width: 1150px)" srcset="img/triple-set-desktop.png" width="525" height="636">
+        <source class="product-card__image" media="(min-width: 768px)" srcset="img/triple-set-tablet.png" width="334" height="404">
         <img class="product-card__image" src="img/basket-image.png" srcset="img/basket-image.png" width="260" height="315" alt="Три вязанные двухцветные корзинки положенные друг в друга.">
       </picture>
       <p class="product-card__price">Цена: 990 руб.</p>
-      <button class="button-primary" type="button">Заказать</button>
+      <button class="button-primary make-order-button" type="button">Заказать</button>
     </section>
 
     <section class="about-us">
@@ -121,9 +129,7 @@
         <dt class="contacts__item">адрес:</dt>
         <dd class="contacts__item">г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101</dd>
       </dl>
-      <div class="map" id="map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac9d160f36ec0489b86878a2a4715f73e935c8aae9e664c87bf81a87b99a9b01f&amp;width=100%&amp;height=454&amp;lang=ru_RU&amp;scroll=true"></script>
-      </div>
+      <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac9d160f36ec0489b86878a2a4715f73e935c8aae9e664c87bf81a87b99a9b01f&amp;source=constructor" frameborder="0"></iframe>
       <a class="button-primary" href="#">Напишите нам</a>
     </section>
   </main>
@@ -158,6 +164,40 @@
       </a>
     </div>
   </footer>
+
+  <div class="catalog-modal catalog-modal--hidden">
+    <div class="catalog-modal__wrapper">
+      <h2 class="catalog-modal__title">Добавить в корзину</h2>
+      <form class="catalog-modal__form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="catalog-modal__fieldset">
+          <legend class="catalog-modal__legend">Выберите размер:</legend>
+          <ul class="catalog-modal__size-list size-list">
+            <li class="size-list__item">
+              <label class="size-list__control">
+                <input class="size-list__input" type="checkbox" name="product size" value="Small" checked>
+                <span class="size-list__control-mark">s</span>
+              </label>
+            </li>
+            <li class="size-list__item">
+              <label class="size-list__control">
+                <input class="size-list__input" type="checkbox" name="product size" value="Medium">
+                <span class="size-list__control-mark">m</span>
+              </label>
+            </li>
+            <li class="size-list__item">
+              <label class="size-list__control">
+                <input class="size-list__input" type="checkbox" name="product size" value="Large">
+                <span class="size-list__control-mark">l</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="catalog-modal__button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </div>
+
   <script src="./js/menu-button.js"></script>
+  <script src="./js/order-button.js"></script>
 </body>
 </html>

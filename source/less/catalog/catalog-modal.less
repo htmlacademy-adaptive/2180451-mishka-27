@@ -18,6 +18,11 @@
   background-color: #ffffff;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  @media (min-width: @tablet-width) {
+    width: 556px;
+    height: 336px;
+  }
 }
 
 .catalog-modal--hidden {
@@ -31,6 +36,12 @@
   line-height: 30px;
   font-weight: 700;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 57px;
+  }
 }
 
 .catalog-modal__fieldset {
@@ -42,7 +53,13 @@
 .catalog-modal__legend {
   margin: 0 auto 22px;
   padding: 0;
+  font-size: 17px;
+  line-height: 30px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .catalog-modal__button {
@@ -57,4 +74,10 @@
   background-color: #63d1bb;
   border: none;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    display: block;
+    width: 350px;
+  }
 }

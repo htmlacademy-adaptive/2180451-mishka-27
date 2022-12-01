@@ -4,6 +4,10 @@
   @media (min-width: @tablet-width) {
     padding: 55px 50px 83px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 68px 50px 90px 225px;
+  }
 }
 
 .about-us__title {
@@ -32,8 +36,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 668px;
     font-size: 20px;
     line-height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
   }
 }
 
@@ -69,7 +78,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 320px;
+    width: 50%;
 
     &--flower-icon {
       order: 1;

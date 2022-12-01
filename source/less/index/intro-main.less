@@ -11,6 +11,12 @@
     background: url("../img/intro-font-tablet.png") no-repeat center -17px;
     background-color: #f9f9f9;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 158px 50px 0;
+    background: url("../img/intro-font-desktop.png") no-repeat center -17px;
+    background-color: #f9f9f9;
+  }
 }
 
 .intro-main__title {
@@ -26,6 +32,11 @@
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 372px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -56,12 +67,12 @@
   }
 
   &--interior {
-    background: url("../img/interior-icon.svg") no-repeat right 36px center;
+    background: url("../img/interior-icon.svg") no-repeat right 36px center/ 41px 62px;
     background-color: #63d1bb;
   }
 
   &--toys {
-    background: url("../img/toy-icon.svg") no-repeat right 27px center;
+    background: url("../img/toy-icon.svg") no-repeat right 27px center/ 60px 61px;
     background-color: #56c3b2;
   }
 }
@@ -89,6 +100,18 @@
     height: 34px;
     width: calc(100% + 100px);
     background-image: url("../../img/zigzag-fill-tablet.svg");
+    background-repeat: repeat-x;
+    z-index: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    display: block;
+    left: -50px;
+    bottom: -17px;
+    height: 34px;
+    width: calc(100% + 100px);
+    background-image: url("../../img/zigzag-fill-desktop.svg");
     background-repeat: repeat-x;
     z-index: 2;
   }
