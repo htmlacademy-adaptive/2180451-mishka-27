@@ -18,7 +18,7 @@
   @media (min-width: @tablet-width) {
     padding: 82px 50px 47px;
     position: relative;
-    background-image: url("../../img/review-font-tablet.png");
+    background-image: url("../img/review-font-tablet.png");
     background-repeat: no-repeat;
   }
 
@@ -28,20 +28,11 @@
 }
 
 .reviews__title {
+  .titles;
   margin: 0 0 14px;
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: 700;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 38px;
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: 53px;
-    line-height: 57px;
   }
 }
 
@@ -85,7 +76,9 @@
   }
 }
 
-.reviews a {
+.reviews__write {
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 82px;

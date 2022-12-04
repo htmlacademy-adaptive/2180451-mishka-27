@@ -20,22 +20,18 @@
 }
 
 .intro-main__title {
+  .index-head-title;
   margin: 0 0 120px;
   padding: 0 30px;
   font-family: "Open Sans", sans-serif;
-  font-size: 27px;
-  line-height: 30px;
-  font-weight: 700;
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    font-size: 43px;
-    line-height: 50px;
+    .titles;
     margin-bottom: 372px;
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 53px;
     line-height: 57px;
   }
 }
@@ -51,18 +47,12 @@
 }
 
 .intro-main__link {
+  .intro-links;
   padding: 24px 30px 31px;
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: 700;
-  text-decoration: none;
-  color: #ffffff;
 
   @media (min-width: @tablet-width) {
     padding: 25px 36px 34px;
     width: calc(50% - 50px);
-    font-size: 20px;
-    line-height: 30px;
     z-index: 1;
   }
 
@@ -78,16 +68,15 @@
 }
 
 .intro-main__free-delivery {
+  margin: 0;
   display: none;
 
   @media (min-width: @tablet-width) {
+    .free-delivery-text;
     position: absolute;
     top: 21px;
     right: 50px;
     display: block;
-    font-size: 15px;
-    line-height: 24px;
-    color: #444444;
   }
 }
 
@@ -99,20 +88,12 @@
     bottom: -17px;
     height: 34px;
     width: calc(100% + 100px);
-    background-image: url("../../img/zigzag-fill-tablet.svg");
+    background-image: url("../img/zigzag-fill-tablet.svg");
     background-repeat: repeat-x;
     z-index: 2;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    display: block;
-    left: -50px;
-    bottom: -17px;
-    height: 34px;
-    width: calc(100% + 100px);
-    background-image: url("../../img/zigzag-fill-desktop.svg");
-    background-repeat: repeat-x;
-    z-index: 2;
+    background-image: url("../img/zigzag-fill-desktop.svg");
   }
 }

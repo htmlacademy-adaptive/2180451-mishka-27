@@ -6,42 +6,31 @@
   @media (min-width: @tablet-width) {
     padding: 101px 50px 87px;
     position: relative;
-    background: url("../../img/zigzag-fill-tablet.svg") repeat-x bottom;
+    background: url("../img/zigzag-fill-tablet.svg") repeat-x bottom;
     background-color: #f1f1f1;
   }
 
   @media (min-width: @desktop-width) {
     padding: 102px 50px 113px;
-    background: url("../../img/zigzag-fill-desktop.svg") no-repeat bottom;
+    background: url("../img/zigzag-fill-desktop.svg") no-repeat bottom;
     background-color: #f1f1f1;
   }
 }
 
 .intro-inner__title {
+  .titles;
   margin: 0;
-  font-size: 27px;
-  line-height: 30px;
-  font-weight: 700;
-
-  @media (min-width: @tablet-width) {
-    .tablet-titles;
-  }
-
-  @media (min-width: @desktop-width) {
-    .desktop-titles;
-  }
 }
 
 .intro-inner__free-delivery {
+  margin: 0;
   display: none;
 
   @media (min-width: @tablet-width) {
+    .free-delivery-text;
     position: absolute;
     top: 21px;
     right: 50px;
     display: block;
-    font-size: 15px;
-    line-height: 24px;
-    color: #444444;
   }
 }

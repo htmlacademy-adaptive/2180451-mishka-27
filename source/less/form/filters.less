@@ -11,15 +11,12 @@
 }
 
 .filters__intro-text {
+  .form-intro-text;
   margin: 0 0 29px;
-  font-size: 13px;
-  line-height: 24px;
-  color: #444444;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 80px;
     padding: 0 50px;
-    .tablet-text;
   }
 
   @media (min-width: @desktop-width) {
@@ -81,13 +78,9 @@
 }
 
 .filters__legend {
+  .legend;
   margin: 0 0 35px;
   position: relative;
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #63d1bb;
 
   &::after {
     position: absolute;
@@ -113,14 +106,13 @@
 }
 
 .filters__list {
+  .form-labels;
   margin: 0;
   padding: 0;
-  .mobile-form-labels;
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
     grid-column: 2/3;
-    .tablet-form-labels;
   }
 }
 
@@ -143,26 +135,23 @@
 }
 
 .filters__phone-input {
+  .form-inputs;
   margin: 0 0 34px;
   padding: 12px 0 15px;
   width: 100%;
-  font-family: "Open Sans", sans-serif;
-  font-size: 17px;
-  line-height: 18px;
   border: none;
   border-bottom: 2px solid #000000;
-  background: url("../../img/phone-icon.svg") no-repeat right 7px center;
+  background: url("../img/phone-icon.svg") no-repeat right 7px center;
 
   @media (min-width: @tablet-width) {
     margin: 0;
     padding-left: 18px;
     box-sizing: border-box;
-    font-size: 19px;
-    background: url("../../img/phone-icon.svg") no-repeat right 26px center;
+    background: url("../img/phone-icon.svg") no-repeat right 26px center;
   }
 
   @media (min-width: @desktop-width) {
-    background: url("../../img/phone-icon.svg") no-repeat right 8px center;
+    background: url("../img/phone-icon.svg") no-repeat right 8px center;
   }
 }
 
@@ -178,26 +167,23 @@
 }
 
 .filters__email-input {
+  .form-inputs;
   margin: 0 0 34px;
   padding: 12px 0 15px;
   width: 100%;
-  font-family: "Open Sans", sans-serif;
-  font-size: 17px;
-  line-height: 18px;
   border: none;
   border-bottom: 2px solid #000000;
-  background: url("../../img/mail-icon.svg") no-repeat right 3px center;
+  background: url("../img/mail-icon.svg") no-repeat right 3px center;
 
   @media (min-width: @tablet-width) {
     margin: 0;
     padding-left: 18px;
     box-sizing: border-box;
-    font-size: 19px;
-    background: url("../../img/mail-icon.svg") no-repeat right 22px center;
+    background: url("../img/mail-icon.svg") no-repeat right 22px center;
   }
 
   @media (min-width: @desktop-width) {
-    background: url("../../img/mail-icon.svg") no-repeat right 4px center;
+    background: url("../img/mail-icon.svg") no-repeat right 4px center;
   }
 }
 
@@ -212,33 +198,27 @@
 }
 
 .filters__wishes {
+  .form-inputs;
   margin-bottom: 17px;
   padding: 17px;
   box-sizing: border-box;
   width: 100%;
   height: 142px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 17px;
-  line-height: 18px;
   border: 2px solid #444444;
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    font-size: 19px;
   }
 }
 
 .filters__remark {
+  .form-remark;
   margin: 0 0 30px;
-  font-size: 14px;
-  line-height: 16px;
-  color: #444444;
 
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-right: 50px;
     padding-top: 10px;
-    .tablet-text;
     float: right;
   }
 

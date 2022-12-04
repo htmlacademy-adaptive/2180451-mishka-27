@@ -1,6 +1,5 @@
 .product-card {
   padding: 30px 30px 36px;
-  color: #444444;
   background: url("../img/zigzag-line.svg") repeat-x bottom;
 
   @media (min-width: @tablet-width) {
@@ -17,39 +16,27 @@
 }
 
 .product-card__title {
+  .titles;
   margin: 0 0 3px;
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #000000;
 
   @media (min-width: @tablet-width) {
-    font-size: 43px;
-    line-height: 50px;
     margin-bottom: 37px;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
-    font-size: 53px;
-    line-height: 57px;
     z-index: 2;
   }
 }
 
 .product-card__subtitle {
+  .product-of-week;
   margin: 0 0 18px;
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #63d1bb;
 
   @media (min-width: @tablet-width) {
     position: absolute;
     right: 63px;
     top: 46px;
-    line-height: 17px;
     width: 100px;
     text-align: center;
   }
@@ -65,15 +52,12 @@
 }
 
 .product-card__description {
+  .product-description;
   margin: 0 0 28px;
-  font-size: 15px;
-  line-height: 24px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 57px;
     width: 292px;
-    font-size: 17px;
-    line-height: 30px;
   }
 }
 
@@ -98,16 +82,13 @@
 }
 
 .product-card__price {
+  .product-price;
   margin: 0 0 25px;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 20px;
     width: 292px;
-    font-size: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -116,6 +97,8 @@
 }
 
 .product-card button {
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
     margin: 0;
   }
