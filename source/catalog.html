@@ -56,13 +56,20 @@
   <main class="catalog-container">
     <div class="intro-inner">
       <h1 class="intro-inner__title">Каталог товаров</h1>
+      <div class="intro-inner__free-delivery">Бесплатная доставка по России</div>
     </div>
 
     <section class="product-catalog">
       <ul class="product-catalog__list">
         <li class="product-catalog__item">
           <a class="product-catalog__item-link" href="#">
-            <img class="product-catalog__image" src="img/catalog-bunny.png" width="258" height="195" alt="Фигурка вязанного зайчика.">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/catalog-bunny-desktop.png" width="314" height="462">
+              <source media="(min-width: 768px)" srcset="img/catalog-bunny-tablet.png" width="334" height="334">
+              <img class="product-catalog__image" src="img/catalog-bunny.png" width="258" height="195" alt="Фигурка вязанного зайчика.">
+            </picture>
+          </a>
+          <a class="product-catalog__name-link" href="#">
             <h2 class="product-catalog__name">Зайчик-попрыгайчик</h2>
           </a>
           <p class="product-catalog__info">Рост 30 см, вес 200 г</p>
@@ -75,7 +82,13 @@
         </li>
         <li class="product-catalog__item">
           <a class="product-catalog__item-link" href="#">
-            <img class="product-catalog__image" src="img/catalog-laundry-basket.png" width="258" height="195" alt="Вязанная корзина со скрученными в рулон полотенцами внутри.">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/catalog-laundry-basket-desktop.png" width="314" height="462">
+              <source media="(min-width: 768px)" srcset="img/catalog-laundry-basket-tablet.png" width="334" height="334">
+              <img class="product-catalog__image" src="img/catalog-laundry-basket.png" width="258" height="195" alt="Вязанная корзина со скрученными в рулон полотенцами внутри.">
+            </picture>
+          </a>
+          <a class="product-catalog__name-link" href="#">
             <h2 class="product-catalog__name">Корзинка для белья</h2>
           </a>
           <p class="product-catalog__info">Диаметр 15 см, высота 10 см</p>
@@ -86,9 +99,15 @@
             </button>
           </div>
         </li>
-        <li class="product-catalog__item catalog-item">
+        <li class="product-catalog__item">
           <a class="product-catalog__item-link" href="#">
-            <img class="product-catalog__image" src="img/catalog-toy-basket.png" width="258" height="195" alt="Вязанная корзина с игрушками внутри.">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/catalog-toy-basket-desktop.png" width="314" height="462">
+              <source media="(min-width: 768px)" srcset="img/catalog-toy-basket-tablet.png" width="334" height="334">
+              <img class="product-catalog__image" src="img/catalog-toy-basket.png" width="258" height="195" alt="Вязанная корзина с игрушками внутри.">
+            </picture>
+          </a>
+          <a class="product-catalog__name-link" href="#">
             <h2 class="product-catalog__name catalog-name">Большая корзинка для игрушек</h2>
           </a>
           <p class="product-catalog__info catalog-info">Диаметр 30 см, высота 30 см</p>
@@ -106,7 +125,11 @@
       <div class="production__wrapper">
         <h2 class="production__title">Процесс производства</h2>
         <div class="production__video">
-          <img class="production__video-frame" src="img/video-basket.png" width="258" height="150" alt="Вязанная двухцветная корзина.">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/video-basket-desktop.png" width="683" height="455">
+            <source media="(min-width: 768px)" srcset="img/video-basket-tablet.png" width="666" height="455">
+            <img class="production__video-frame" src="img/video-basket.png" width="258" height="150" alt="Вязанная двухцветная корзина.">
+          </picture>
         </div>
         <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <button class="production__button" type="button">Сделать заказ</button>
@@ -115,6 +138,7 @@
   </main>
 
   <footer class="footer">
+    <div class="footer__mishka-logo"></div>
     <ul class="social-list">
       <li class="social-list__item">
         <a class="social-list__link" href="https://vk.com/htmlacademy">
@@ -175,6 +199,7 @@
       </form>
     </div>
   </div>
+
   <script src="./js/menu-button.js"></script>
   <script src="./js/catalog-modal.js"></script>
 </body>

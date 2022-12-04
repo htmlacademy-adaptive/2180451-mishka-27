@@ -1,5 +1,18 @@
 .client-info-list {
   padding-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -18px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.client-info-list__item {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
 .client-info-list__item:not(:last-child) {
@@ -10,6 +23,18 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: min-content auto;
+    align-items: baseline;
+  }
+}
+
+.client-info-list__control-label {
+  @media (min-width: @tablet-width) {
+    padding-right: 25px;
+  }
 }
 
 .client-info-list__input {
@@ -22,5 +47,14 @@
   &::placeholder {
     font-size: 17px;
     line-height: 18px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 19px;
+      line-height: 18px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 18px;
   }
 }
