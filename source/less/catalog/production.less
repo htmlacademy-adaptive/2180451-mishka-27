@@ -73,18 +73,6 @@
   position: relative;
   margin-bottom: 35px;
 
-  &::after {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 101px;
-    height: 77px;
-    background: url("../img/play-icon.svg") no-repeat center;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  }
-
   @media (min-width: @tablet-width) {
     order: -1;
     margin: 0 auto 41px;
@@ -107,6 +95,18 @@
     position: static;
     display: block;
   }
+}
+
+.production__play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 101px;
+  height: 77px;
+  border: none;
+  background: url("../img/play-icon.svg") no-repeat center;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .production__description {
