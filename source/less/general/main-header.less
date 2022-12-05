@@ -1,5 +1,9 @@
 .main-header {
   background-color: #ffffff;
+
+  @media (min-width: @desktop-width) {
+    border-bottom: 1px solid #ececec;
+  }
 }
 
 .main-header__wrapper {
@@ -18,7 +22,8 @@
   @media (min-width: @desktop-width) {
     padding: 0;
     display: block;
-    max-width: 1084px;
+    width: 1150px;
+    border-bottom: none;
   }
 }
 

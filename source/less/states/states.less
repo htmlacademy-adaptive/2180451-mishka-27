@@ -1,26 +1,27 @@
 .main-header__logo:hover,
 .site-list__link:hover,
 .main-nav__news-sale-link:hover,
-.user-list__button:hover,
+.user-list__button:hover span,
 .reviews__button:hover,
 .product-catalog__name:hover {
   opacity: 0.6;
 }
 
-.user-list__button--search:hover,
-.user-list__button--search:active {
-  background: url("../img/search-icon-hover.svg") no-repeat 32px center;
+.user-list__button:hover svg,
+.product-catalog__basket-icon:hover {
+  fill: @green;
+  opacity: 1;
 }
 
-.user-list__button--basket:hover,
-.user-list__button--basket:active {
-  background: url("../img/cart-icon-hover.svg") no-repeat 31px center;
+.user-list__button:active svg,
+.product-catalog__basket-icon:active {
+  opacity: 0.3;
 }
 
 .main-header__logo:active,
 .site-list__link:active,
 .main-nav__news-sale-link:active,
-.user-list__button:active,
+.user-list__button:active span,
 .reviews__button:active,
 .product-catalog__name:active {
   opacity: 0.3;
@@ -40,11 +41,7 @@
   opacity: 0.6;
 }
 
-.intro-main__link:hover {
-  transform: scaleY(1.04);
-  transition: all 0.3s ease;
-}
-
+.intro-main__link:hover,
 .intro-main__link:focus-visible {
   outline: none;
   transform: translateY(-5px);
@@ -96,15 +93,6 @@
 .product-catalog__item:active,
 .production__wrapper:active {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-.product-catalog__button:hover {
-  background: url("../img/cart-icon-hover.svg") no-repeat center;
-}
-
-.product-catalog__button:active {
-  background: url("../img/cart-icon-hover.svg") no-repeat center;
-  opacity: 0.3;
 }
 
 .production__play-button:hover {

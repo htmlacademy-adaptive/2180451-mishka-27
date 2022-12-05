@@ -33,6 +33,15 @@
   left: 0;
   min-width: 100%;
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__wrapper--popover {

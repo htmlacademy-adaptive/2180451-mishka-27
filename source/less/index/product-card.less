@@ -1,4 +1,4 @@
-.product-card {
+.product-card__wrapper {
   padding: 30px 30px 36px;
   background: url("../img/zigzag-line.svg") repeat-x bottom;
 
@@ -9,7 +9,10 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0 auto;
     padding: 115px 50px 96px 225px;
+    box-sizing: border-box;
+    width: 1150px;
     position: relative;
     background: url("../img/zigzag-line-desktop.svg") no-repeat bottom;
   }

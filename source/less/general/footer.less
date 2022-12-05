@@ -1,4 +1,10 @@
 .footer {
+  @media (min-width: @desktop-width) {
+    background-color: #f1f1f1;
+  }
+}
+
+.footer__wrapper {
   padding: 25px 0 22px;
   display: flex;
   flex-direction: column;
@@ -8,6 +14,12 @@
     padding: 51px 50px 58px;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 1150px;
   }
 }
 
