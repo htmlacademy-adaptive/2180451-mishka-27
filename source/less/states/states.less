@@ -13,6 +13,23 @@
   opacity: 1;
 }
 
+.product-catalog__item-link:focus-visible {
+  outline: 2px solid @green;
+}
+
+.product-catalog__name-link:focus-visible,
+.product-catalog__name-link:focus-visible .product-catalog__name {
+  outline: none;
+  color: @green;
+}
+
+.product-catalog__button:focus-visible svg,
+.product-catalog__button:focus-visible {
+  outline: none;
+  fill: @green;
+  opacity: 1;
+}
+
 .user-list__button:active svg,
 .product-catalog__basket-icon:active {
   opacity: 0.3;
@@ -30,8 +47,7 @@
 .site-list__link:focus-visible,
 .main-nav__news-sale-link:focus-visible,
 .user-list__button:focus-visible,
-.reviews__button:focus-visible,
-.product-catalog__name:focus-visible {
+.reviews__button:focus-visible {
   outline: none;
   background-color: @green;
 }
@@ -54,7 +70,8 @@
   background-color: @grey;
 }
 
-.button-primary:focus-visible {
+.button-primary:focus-visible,
+.production__button:focus-visible {
   outline: none;
   background-color: @green;
 }
@@ -64,7 +81,9 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.contacts__link:hover {
+.contacts__link:hover,
+.contacts__link:focus-visible {
+  outline: none;
   color: #46c1ae;
 }
 
@@ -72,17 +91,32 @@
   opacity: 0.1;
 }
 
-.footer__mishka-logo:hover {
-  background-image: url("../img/logo-footer-hover.svg");
+.footer__mishka-logo:hover svg,
+.footer__mishka-logo:focus-visible svg,
+.footer__mishka-logo:focus-visible {
+  outline: none;
+  fill: @green;
 }
 
 .footer__mishka-logo:active {
   opacity: 0.3;
 }
 
+.social-list__link:focus-visible,
+.social-list__link:focus-visible svg {
+  outline: none;
+  fill: @green;
+}
+
 .social-list__logo:hover,
 .copyright:hover .copyright__logo {
   fill: #46c1ae;
+}
+
+.copyright__link:focus-visible svg,
+.copyright__link:focus-visible {
+  outline: none;
+  fill: #0000ff;
 }
 
 .social-list__logo:active,
@@ -100,7 +134,9 @@
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.production__play-button:hover {
+.production__play-button:hover,
+.production__play-button:focus-visible {
+  outline: none;
   transform: scale(1.2) translate(-40%, -40%);
   transition: all 0.3s ease;
 }
@@ -116,6 +152,10 @@
   border-color: @green;
 }
 
+.radio-list__input:focus-visible + .radio-list__control-mark,
+.checkbox-list__input:focus-visible + .checkbox-list__control-mark {
+  box-shadow: 0 0 6px 3px @green;
+}
 
 .radio-list__control-mark:active,
 .checkbox-list__control-mark:active {
@@ -135,10 +175,12 @@
 }
 
 .client-info-list__input:focus-visible,
-.filters__phone-input,
-.filters__email-input,
-.filters__wishes {
+.filters__phone-input:focus-visible,
+.filters__email-input:focus-visible,
+.filters__wishes:focus-visible {
   outline: none;
+  box-shadow: 0 2px 20px 1px @green;
+  border-color: @green;
 }
 
 .filters__phone-input:hover,
