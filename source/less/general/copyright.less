@@ -2,16 +2,22 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .copyright__text {
+  .footer-copyright;
   margin: 0;
   margin-right: 27px;
-  font-size: 19px;
-  line-height: 18px;
-  font-weight: 700;
 }
 
 .copyright__link {
   display: flex;
+}
+
+.copyright__logo {
+  fill: #63d1bb;
 }

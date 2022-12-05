@@ -1,37 +1,99 @@
 .intro-main {
   padding-top: 73px;
+  position: relative;
   display: flex;
   flex-direction: column;
-  background-image: url("../img/intro-font.png");
-  background-position-y: -17px;
-  background-color: #f1f1f1;
+  background: url("../img/intro-font.png") no-repeat center -17px;
+  background-color: #f9f9f9;
+
+  @media (min-width: @tablet-width) {
+    padding: 155px 50px 0;
+    background: url("../img/intro-font-tablet.png") no-repeat center -17px;
+    background-color: #f9f9f9;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 158px 50px 0;
+    background: url("../img/intro-font-desktop.png") no-repeat center -17px;
+    background-color: #f9f9f9;
+  }
 }
 
 .intro-main__title {
+  .index-head-title;
   margin: 0 0 120px;
   padding: 0 30px;
   font-family: "Open Sans", sans-serif;
-  font-size: 27px;
-  line-height: 30px;
-  font-weight: 700;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    .titles;
+    margin-bottom: 372px;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 57px;
+  }
+}
+
+.intro-main__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    flex-direction: row;
+  }
 }
 
 .intro-main__link {
+  .intro-links;
   padding: 24px 30px 31px;
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: 700;
-  text-decoration: none;
-  color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    padding: 25px 36px 34px;
+    width: calc(50% - 50px);
+    z-index: 1;
+  }
 
   &--interior {
-    background: url("../img/interior-icon.svg") no-repeat right 36px center;
+    background: url("../img/interior-icon.svg") no-repeat right 36px center/ 41px 62px;
     background-color: #63d1bb;
   }
 
   &--toys {
-    background: url("../img/toy-icon.svg") no-repeat right 27px center;
+    background: url("../img/toy-icon.svg") no-repeat right 27px center/ 60px 61px;
     background-color: #56c3b2;
+  }
+}
+
+.intro-main__free-delivery {
+  margin: 0;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    .free-delivery-text;
+    position: absolute;
+    top: 21px;
+    right: 50px;
+    display: block;
+  }
+}
+
+.intro-main__zigzag-line {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    display: block;
+    left: -50px;
+    bottom: -17px;
+    height: 34px;
+    width: calc(100% + 100px);
+    background-image: url("../img/zigzag-fill-tablet.svg");
+    background-repeat: repeat-x;
+    z-index: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/zigzag-fill-desktop.svg");
   }
 }

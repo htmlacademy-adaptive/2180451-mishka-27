@@ -1,0 +1,178 @@
+.main-header__logo:hover,
+.site-list__link:hover,
+.main-nav__news-sale-link:hover,
+.user-list__button:hover,
+.reviews__button:hover,
+.product-catalog__name:hover {
+  opacity: 0.6;
+}
+
+.user-list__button--search:hover,
+.user-list__button--search:active {
+  background: url("../img/search-icon-hover.svg") no-repeat 32px center;
+}
+
+.user-list__button--basket:hover,
+.user-list__button--basket:active {
+  background: url("../img/cart-icon-hover.svg") no-repeat 31px center;
+}
+
+.main-header__logo:active,
+.site-list__link:active,
+.main-nav__news-sale-link:active,
+.user-list__button:active,
+.reviews__button:active,
+.product-catalog__name:active {
+  opacity: 0.3;
+}
+
+.site-list__link:focus-visible,
+.main-nav__news-sale-link:focus-visible,
+.user-list__button:focus-visible,
+.reviews__button:focus-visible,
+.product-catalog__name:focus-visible {
+  outline: none;
+  background-color: @green;
+}
+
+.main-header__logo:focus-visible {
+  outline: none;
+  opacity: 0.6;
+}
+
+.intro-main__link:hover {
+  transform: scaleY(1.04);
+  transition: all 0.3s ease;
+}
+
+.intro-main__link:focus-visible {
+  outline: none;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+.button-primary:hover,
+.production__button:hover {
+  color: @white;
+  background-color: @grey;
+}
+
+.button-primary:active,
+.production__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contacts__link:hover {
+  color: #46c1ae;
+}
+
+.contacts__link:active::after {
+  opacity: 0.1;
+}
+
+.footer__mishka-logo:hover {
+  background-image: url("../img/logo-footer-hover.svg");
+}
+
+.footer__mishka-logo:active {
+  opacity: 0.3;
+}
+
+.social-list__logo:hover,
+.copyright:hover .copyright__logo {
+  fill: #46c1ae;
+}
+
+.social-list__logo:active,
+.copyright:active .copyright__logo {
+  opacity: 0.3;
+}
+
+.product-catalog__item:hover,
+.production__wrapper:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-catalog__item:active,
+.production__wrapper:active {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-catalog__button:hover {
+  background: url("../img/cart-icon-hover.svg") no-repeat center;
+}
+
+.product-catalog__button:active {
+  background: url("../img/cart-icon-hover.svg") no-repeat center;
+  opacity: 0.3;
+}
+
+.production__play-button:hover {
+  transform: scale(1.2) translate(-40%, -40%);
+  transition: all 0.3s ease;
+}
+
+.production__play-button:active {
+  transform: scale(0.8) translate(-60%, -60%);
+  transition: all 0.3s ease;
+  opacity: 0.3;
+}
+
+.radio-list__control-mark:hover,
+.checkbox-list__control-mark:hover {
+  border-color: @green;
+}
+
+
+.radio-list__control-mark:active,
+.checkbox-list__control-mark:active {
+  border-color: @grey;
+  opacity: 0.3;
+}
+
+.radio-list__input:disabled + .radio-list__control-mark,
+.checkbox-list__input:disabled + .checkbox-list__control-mark {
+  border-color: @grey;
+  opacity: 0.1;
+}
+
+.client-info-list__input:hover,
+.client-info-list__input:not(:placeholder-shown) {
+  border-color: @green;
+}
+
+.client-info-list__input:focus-visible,
+.filters__phone-input,
+.filters__email-input,
+.filters__wishes {
+  outline: none;
+}
+
+.filters__phone-input:hover,
+.filters__phone-input:not(:placeholder-shown) {
+  border-color: @green;
+  background-image: url("../img/phone-hover.svg");
+}
+
+.filters__email-input:hover,
+.filters__email-input:not(:placeholder-shown) {
+  border-color: @green;
+  background-image: url("../img/mail-hover.svg");
+}
+
+.filters__wishes:hover,
+.filters__wishes:not(:placeholder-shown) {
+  border-color: @green;
+}
+
+.size-list__control-mark:hover {
+  border-color: rgba(68, 68, 68, 0.3);
+}
+
+.catalog-modal__button:hover {
+  background-color: darken(@green, 10);
+}
+
+.catalog-modal__button:active {
+  background-color: lighten(@green, 10);
+}

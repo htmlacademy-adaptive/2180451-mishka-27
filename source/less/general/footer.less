@@ -3,4 +3,21 @@
   display: flex;
   flex-direction: column;
   background-color: #f1f1f1;
+
+  @media (min-width: @tablet-width) {
+    padding: 51px 50px 58px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__mishka-logo {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 102px;
+    height: 34px;
+    background: url("../img/logo-footer.svg") no-repeat center;
+  }
 }

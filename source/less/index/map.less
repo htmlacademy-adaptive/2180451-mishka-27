@@ -1,5 +1,25 @@
 .map {
   margin-bottom: 42px;
+  display: block;
   position: relative;
   left: -30px;
+  min-width: calc(100% + 60px);
+  height: 454px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-bottom: 55px;
+    left: -50px;
+    min-width: calc(100% + 100px);
+    height: 457px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 71px;
+    left: calc(100% - 577px);
+    display: block;
+    min-width: 527px;
+    height: 457px;
+  }
 }

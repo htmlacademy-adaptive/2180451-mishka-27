@@ -1,13 +1,22 @@
 .feature-list {
-  margin: 0 0 28px;
-  padding: 0;
+  .product-props;
+  margin: 0 auto;
+  padding: 0 0 28px;
+  width: 260px;
   display: grid;
   grid-template-columns: 97px auto;
   grid-template-rows: repeat(3, 40px);
   align-items: center;
-  font-size: 15px;
-  line-height: 20px;
-  color: #444444;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 57px;
+    padding: 0;
+    width: 292px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 105px;
+  }
 }
 
 .feature-list__item {
