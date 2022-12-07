@@ -1,4 +1,11 @@
 .intro-main {
+  @media (min-width: @desktop-width) {
+    position: relative;
+    background-color: #f9f9f9;
+  }
+}
+
+.intro-main__wrapper {
   padding-top: 73px;
   position: relative;
   display: flex;
@@ -13,9 +20,11 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0 auto;
     padding: 158px 50px 0;
-    background: url("../img/intro-font-desktop.png") no-repeat center -17px;
-    background-color: #f9f9f9;
+    box-sizing: border-box;
+    width: 1150px;
+    background: url("../img/intro-font-desktop.png") repeat-x center -17px;
   }
 }
 
@@ -36,7 +45,7 @@
   }
 }
 
-.intro-main__wrapper {
+.intro-main__link-wrapper {
   display: flex;
   flex-direction: column;
 
@@ -94,6 +103,18 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../img/zigzag-fill-desktop.svg");
+    background: none;
+  }
+}
+
+.intro-main__section-underline {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 34px;
+    background: url("../img/zigzag-fill-desktop.svg") repeat-x bottom/ 1250px 34px;
+    z-index: 2;
   }
 }
