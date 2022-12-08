@@ -17,8 +17,13 @@
   @media (min-width: @tablet-width) {
     padding: 82px 50px 47px;
     position: relative;
-    background-image: url("../img/review-font-tablet.png");
+    background-image: url("../../img/index-img/review-font.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-img/review-font@2x.png");
+      background-size: 350px 457px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -26,7 +31,12 @@
     padding: 78px 50px 96px 225px;
     box-sizing: border-box;
     width: 1150px;
-    background: url("../img/review-font-tablet.png") no-repeat left 50px top;
+    background: url("../img/index-img/review-font.png") no-repeat left 50px top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-img/review-font@2x.png");
+      background-size: 350px 457px;
+    }
   }
 }
 
