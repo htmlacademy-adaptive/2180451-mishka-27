@@ -10,13 +10,25 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background: url("../img/intro-font.png") no-repeat center -17px;
+  background: url("../img/index-img/intro-font.png") no-repeat center -17px;
   background-color: #f9f9f9;
+
+  @media (max-width: @mobile-width-only) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-img/intro-font@2x.png");
+      background-size: 320px 373px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding: 155px 50px 0;
-    background: url("../img/intro-font-tablet.png") no-repeat center -17px;
+    background: url("../img/index-img/intro-font-tablet.png") no-repeat center -17px;
     background-color: #f9f9f9;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-img/intro-font-tablet@2x.png");
+      background-size: 768px 746px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -24,7 +36,12 @@
     padding: 158px 50px 0;
     box-sizing: border-box;
     width: 1150px;
-    background: url("../img/intro-font-desktop.png") repeat-x center -17px;
+    background: url("../img/index-img/intro-font-desktop.png") repeat-x center -17px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-img/intro-font-desktop@2x.png");
+      background-size: 1150px 746px;
+    }
   }
 }
 
