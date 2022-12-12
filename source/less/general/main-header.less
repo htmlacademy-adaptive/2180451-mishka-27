@@ -9,6 +9,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 50px;
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -23,9 +24,15 @@
 }
 
 .main-header__logo {
-  padding: 18px 0;
+  margin: 0 auto;
+  padding: 22px 0;
   display: block;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 22px 0 20px;
+  }
 
   @media (min-width: @desktop-width) {
     position: absolute;
@@ -34,4 +41,8 @@
     transform: translate(-50%, -50%);
     z-index: 5;
   }
+}
+
+.main-header__logo img {
+  display: block;
 }

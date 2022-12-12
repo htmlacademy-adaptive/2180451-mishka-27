@@ -1,13 +1,13 @@
 .about-us__wrapper {
-  padding: 30px;
+  padding: 30px 30px 24px;
 
   @media (min-width: @tablet-width) {
-    padding: 55px 50px 83px;
+    padding: 56px 50px 27px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
-    padding: 68px 50px 90px 225px;
+    padding: 68px 50px 35px 225px;
     box-sizing: border-box;
     width: 1150px;
   }
@@ -25,50 +25,90 @@
 .about-us__list {
   .about-subtitles;
   margin: 0;
-  padding: 0;
+  padding: 55px 0 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 83px;
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
+    padding: 56px 0;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+    row-gap: 110px;
     width: 668px;
   }
 
   @media (min-width: @desktop-width) {
+    padding: 55px 0;
     width: 700px;
   }
 }
 
 .about-us__item {
-  padding-top: 54px;
+  padding: 0;
+  position: relative;
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  &--flower-icon::after {
+    position: absolute;
+    content: "";
+    width: 33px;
+    height: 38px;
+    top: -57px;
+    left: 8px;
+    background: url("../img/flower-icon.svg") no-repeat center;
   }
 
-  &--flower-icon {
-    background: url("../img/flower-icon.svg") no-repeat left top;
+  &--money-icon::after {
+    position: absolute;
+    content: "";
+    width: 47px;
+    height: 27px;
+    top: -54px;
+    left: 1px;
+    background: url("../img/money-icon.svg") no-repeat center;
   }
 
-  &--money-icon {
-    background: url("../img/money-icon.svg") no-repeat left top;
+  &--heart-icon::after {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 27px;
+    top: -48px;
+    left: 8px;
+    background: url("../img/heart-icon.svg") no-repeat center;
   }
 
-  &--heart-icon {
-    background: url("../img/heart-icon.svg") no-repeat left top;
+  &--thread-icon::after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 34px;
+    top: -53px;
+    left: 3px;
+    background: url("../img/thread-icon.svg") no-repeat center;
   }
 
-  &--thread-icon {
-    background: url("../img/thread-icon.svg") no-repeat left top;
+  &--rocket-icon::after {
+    position: absolute;
+    content: "";
+    width: 55px;
+    height: 23px;
+    top: -51px;
+    left: -6px;
+    background: url("../img/rocket-icon.svg") no-repeat center;
   }
 
-  &--rocket-icon {
-    background: url("../img/rocket-icon.svg") no-repeat left top;
-  }
-
-  &--gift-icon {
-    background: url("../img/gift-icon.svg") no-repeat left top;
+  &--gift-icon::after {
+    position: absolute;
+    content: "";
+    width: 33px;
+    height: 32px;
+    top: -52px;
+    left: 3px;
+    background: url("../img/gift-icon.svg") no-repeat center;
   }
 
   @media (min-width: @tablet-width) {

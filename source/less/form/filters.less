@@ -20,7 +20,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto 80px;
+    margin: 0 auto 78px;
     padding: 0 225px 0 225px;
     box-sizing: border-box;
     width: 1150px;
@@ -30,19 +30,23 @@
 .filters__form {
   &-wrapper:nth-of-type(1) {
     @media (min-width: @tablet-width) {
-      padding: 50px 0;
+      padding: 65px 0 69px;
       background-color: #f1f1f1;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 48px 0 52px 0;
+      padding: 68px 0 66px 0;
     }
   }
 
   &-wrapper:nth-of-type(2) {
     @media (min-width: @tablet-width) {
-      padding: 50px 0;
+      padding: 0;
       background-color: #f1f1f1;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 66px 0 50px 0;
     }
   }
 }
@@ -53,7 +57,7 @@
   border: none;
 
   &:nth-of-type(3) .filters__legend {
-    margin-bottom: 29px;
+    margin-bottom: 22px;
   }
 
   &:nth-of-type(4) .filters__legend,
@@ -69,11 +73,11 @@
     padding: 0 50px;
     position: relative;
     display: grid;
-    grid-template-columns: 169px auto;
+    grid-template-columns: 167px auto;
 
     &:nth-child(3) {
       @media (min-width: @tablet-width) {
-        padding: 66px 50px 50px;
+        padding: 68px 50px 50px;
       }
 
       @media (min-width: @desktop-width) {
@@ -82,7 +86,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      grid-template-columns: 128px auto;
+      grid-template-columns: 125px auto;
     }
   }
 
@@ -96,7 +100,8 @@
 
 .filters__legend {
   .legend;
-  margin: 0 0 35px;
+  margin: 0;
+  padding: 0;
   position: relative;
 
   &::after {
@@ -120,6 +125,10 @@
     top: 0;
     left: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 1px 0 0 12px;
+  }
 }
 
 .filters__list {
@@ -141,20 +150,24 @@
 }
 
 .filters__fieldset--phone {
+  margin-bottom: 35px;
+
   @media (min-width: @tablet-width) {
-    padding: 65px 50px 24px;
+    margin: 0;
+    padding: 66px 50px 24px;
     background-color: #f1f1f1;
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0 auto;
     padding: 0 225px 24px 100px;
   }
 }
 
 .filters__phone-input {
   .form-inputs;
-  margin: 0 0 34px;
-  padding: 12px 0 15px;
+  margin: 0;
+  padding: 20px 0 16px;
   width: 100%;
   border: none;
   border-bottom: 2px solid #000000;
@@ -162,9 +175,9 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding-left: 18px;
+    padding: 13px 55px 14px 18px;
     box-sizing: border-box;
-    background: url("../img/phone-icon.svg") no-repeat right 26px center;
+    background: url("../img/phone-icon.svg") no-repeat right 26px top 14px;
   }
 
   @media (min-width: @desktop-width) {
@@ -173,30 +186,34 @@
 }
 
 .filters__fieldset--email {
+  margin-bottom: 35px;
+
   @media (min-width: @tablet-width) {
-    padding: 26px 50px 50px;
+    margin: 0;
+    padding: 18px 50px 50px;
     background-color: #f1f1f1;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 26px 225px 0 100px;
+    margin: 0 auto;
+    padding: 18px 225px 0 100px;
   }
 }
 
 .filters__email-input {
   .form-inputs;
-  margin: 0 0 34px;
-  padding: 12px 0 15px;
+  margin: 0;
+  padding: 20px 0 16px;
   width: 100%;
   border: none;
   border-bottom: 2px solid #000000;
-  background: url("../img/mail-icon.svg") no-repeat right 3px center;
+  background: url("../img/mail-icon.svg") no-repeat right 3px top 20px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding-left: 18px;
+    padding: 12px 55px 13px 18px;
     box-sizing: border-box;
-    background: url("../img/mail-icon.svg") no-repeat right 22px center;
+    background: url("../img/mail-icon.svg") no-repeat right 22px top 17px;
   }
 
   @media (min-width: @desktop-width) {
@@ -206,37 +223,38 @@
 
 .filters__fieldset--wishes {
   @media (min-width: @tablet-width) {
-    padding: 69px 50px 50px;
+    padding: 69px 50px 48px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 69px 225px 50px 100px;
+    padding: 69px 225px 45px 100px;
   }
 }
 
 .filters__wishes {
   .form-inputs;
-  margin-bottom: 17px;
+  margin-bottom: 12px;
   padding: 17px;
   box-sizing: border-box;
   width: 100%;
-  height: 142px;
+  min-height: 142px;
   border: 2px solid #444444;
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    padding: 15px;
   }
 }
 
 .filters__ordering-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   @media (min-width: @tablet-width) {
     padding: 0 50px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
   }
 
   @media (min-width: @desktop-width) {
@@ -250,7 +268,7 @@
 
 .filters__remark {
   .form-remark;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 
   @media (min-width: @tablet-width) {
     order: 2;
@@ -259,6 +277,8 @@
 }
 
 .filters button {
+  font-size: 17px;
+
   @media (min-width: @tablet-width) {
     width: 230px;
   }
