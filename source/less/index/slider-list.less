@@ -15,6 +15,7 @@
 .slider-list__review {
   .review-text;
   margin: 0 0 33px;
+  word-wrap: break-word;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 61px;
@@ -22,6 +23,12 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 44px;
+  }
+}
+
+.slider-list__review br {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
