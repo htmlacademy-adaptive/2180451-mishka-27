@@ -1,35 +1,26 @@
 .feature-list {
   .product-props;
   margin: 0 auto;
-  padding: 0 0 28px;
+  padding: 0 0 29px;
   width: 260px;
   display: grid;
-  grid-template-columns: 97px auto;
-  grid-template-rows: repeat(3, 40px);
-  align-items: center;
+  grid-template-columns: 98px auto;
+  grid-template-rows: repeat(3, minmax(32px, auto));
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 57px;
+    margin: 0 0 58px;
     padding: 0;
     width: 292px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 105px;
+    margin-bottom: 112px;
   }
 }
 
 .feature-list__item {
   position: relative;
   margin: 0;
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 32px;
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: #ececec;
-  }
+  padding: 6px 0 12px;
+  border-bottom: 1px solid #ececec;
 }

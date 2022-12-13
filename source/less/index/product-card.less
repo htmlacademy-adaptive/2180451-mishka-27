@@ -1,16 +1,16 @@
 .product-card__wrapper {
-  padding: 30px 30px 36px;
+  padding: 32px 30px 42px;
   background: url("../img/zigzag-line.svg") repeat-x bottom;
 
   @media (min-width: @tablet-width) {
-    padding: 40px 50px 69px;
+    padding: 51px 50px 69px;
     position: relative;
     background: url("../img/zigzag-line-tablet.svg") repeat-x bottom;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
-    padding: 115px 50px 96px 225px;
+    padding: 131px 50px 96px 225px;
     box-sizing: border-box;
     width: 1150px;
     position: relative;
@@ -27,6 +27,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 36px;
     position: relative;
     z-index: 2;
   }
@@ -39,7 +40,7 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     right: 63px;
-    top: 46px;
+    top: 56px;
     width: 100px;
     text-align: center;
   }
@@ -47,7 +48,7 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     left: 82px;
-    top: 123px;
+    top: 139px;
     line-height: 17px;
     width: 100px;
     text-align: center;
@@ -56,11 +57,15 @@
 
 .product-card__description {
   .product-description;
-  margin: 0 0 28px;
+  margin: 0 0 22px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 57px;
+    margin-bottom: 44px;
     width: 292px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 54px;
   }
 }
 
@@ -71,14 +76,14 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
     position: absolute;
-    top: 140px;
+    top: 151px;
     right: 50px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
     position: absolute;
-    top: 54px;
+    top: 70px;
     right: 50px;
     z-index: 1;
   }
@@ -90,12 +95,12 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 33px;
     width: 292px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 33px;
+    margin-bottom: 32px;
   }
 }
 

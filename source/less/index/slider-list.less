@@ -1,5 +1,5 @@
 .slider-list {
-  margin: 0 0 33px;
+  margin: 0 0 29px;
   padding: 0;
   list-style-type: none;
 
@@ -15,6 +15,7 @@
 .slider-list__review {
   .review-text;
   margin: 0 0 33px;
+  word-wrap: break-word;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 61px;
@@ -25,9 +26,15 @@
   }
 }
 
+.slider-list__review br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .slider-list__author-name {
   .review-name;
-  margin: 0;
+  margin: 0 0 3px;
 }
 
 .slider-list__author-username {
