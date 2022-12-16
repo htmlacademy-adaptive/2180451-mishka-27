@@ -28,6 +28,7 @@
   margin: 0;
   display: flex;
   align-items: center;
+  width: 100%;
   text-align: left;
   background-color: #ffffff;
   border: none;
@@ -62,7 +63,11 @@
 }
 
 .user-list__button-basket-icon {
-  margin-right: 30px;
+  margin-right: 23px;
   fill: @black;
   opacity: 0.2;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 30px;
+  }
 }
