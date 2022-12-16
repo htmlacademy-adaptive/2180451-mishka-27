@@ -20,7 +20,9 @@
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 
   @media (min-width: @tablet-width) {
-    width: 556px;
+    padding: 38px 30px 46px;
+    box-sizing: border-box;
+    width: 566px;
     height: 336px;
   }
 }
@@ -30,10 +32,11 @@
 }
 
 .catalog-modal__title {
-  .modal-title;
+  .modal-title();
   margin: 0 0 14px;
   padding: 0 60px;
   text-align: center;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 11px;
@@ -41,23 +44,23 @@
 }
 
 .catalog-modal__fieldset {
-  margin: 0;
+  margin: 0 0 5px;
   padding: 0;
   border: none;
 }
 
 .catalog-modal__legend {
-  .modal-legend;
+  .modal-legend();
   margin: 0 auto 22px;
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 }
 
 .catalog-modal__button {
-  .modal-button;
+  .modal-button();
   margin: 0;
   padding: 18px 0;
   width: 100%;

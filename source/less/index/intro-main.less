@@ -46,19 +46,16 @@
 }
 
 .intro-main__title {
-  .head-title;
+  .head-title();
   margin: 0 0 120px;
   padding: 0 30px;
-  font-family: "Open Sans", sans-serif;
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    .titles;
     margin-bottom: 372px;
   }
 
   @media (min-width: @desktop-width) {
-    line-height: 57px;
     margin-bottom: 356px;
   }
 }
@@ -74,7 +71,7 @@
 }
 
 .intro-main__link {
-  .intro-links;
+  .intro-links();
   padding: 24px 90px 31px 30px;
 
   &--interior {
@@ -109,7 +106,7 @@
   display: none;
 
   @media (min-width: @tablet-width) {
-    .free-delivery-text;
+    .free-delivery-text();
     position: absolute;
     top: 21px;
     right: 50px;
