@@ -70,6 +70,26 @@
   transition: all 0.3s ease;
 }
 
+.intro-main__link--interior:hover {
+  background-image: url("../img/interior-hover.svg");
+  background-color: #59d5bc;
+}
+
+.intro-main__link--interior:active {
+  background-image: url("../img/interior-active.svg");
+  background-color: #59d5bc;
+}
+
+.intro-main__link--toys:hover {
+  background-image: url("../img/toy-hover.svg");
+  background-color: #46c1ae;
+}
+
+.intro-main__link--toys:active {
+  background-image: url("../img/toy-active.svg");
+  background-color: #46c1ae;
+}
+
 .button-primary:hover,
 .production__button:hover {
   color: @white;
@@ -119,14 +139,14 @@
   fill: #46c1ae;
 }
 
-.footer__copyright-link:focus-visible svg,
+.footer__copyright-link:focus-visible .footer__copyright-text,
 .footer__copyright-link:focus-visible {
+  color: @green;
   outline: none;
-  fill: #0000ff;
 }
 
 .social-list__logo:active,
-.copyright:active .copyright__logo {
+.footer__copyright-link:active .footer__copyright-logo {
   opacity: 0.3;
 }
 

@@ -109,7 +109,7 @@
     content: "";
     top: 50%;
     left: calc(100% + 24px);
-    width: calc(260px - 100% - 24px);
+    width: calc(100vw - 100% - 84px);
     height: 1px;
     background-color: #62d1ba;
 
@@ -276,10 +276,12 @@
   }
 }
 
-.filters button {
+.filters__order-button {
   font-size: 17px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     width: 230px;
   }
 }
