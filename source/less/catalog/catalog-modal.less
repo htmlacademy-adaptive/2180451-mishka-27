@@ -6,7 +6,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  z-index: 1;
+  z-index: 5;
 }
 
 .catalog-modal__wrapper {
@@ -23,7 +23,7 @@
     padding: 38px 30px 46px;
     box-sizing: border-box;
     width: 566px;
-    height: 336px;
+    min-height: 336px;
   }
 }
 
@@ -34,12 +34,19 @@
 .catalog-modal__title {
   .modal-title();
   margin: 0 0 14px;
-  padding: 0 60px;
-  text-align: center;
+  padding: 0 55px;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 11px;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-modal__title br {
+    display: none;
   }
 }
 
