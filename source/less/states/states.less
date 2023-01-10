@@ -237,3 +237,12 @@
 .catalog-modal__button:active {
   background-color: lighten(@green, 10);
 }
+
+.size-list__input:focus-visible + .size-list__control-mark {
+  box-shadow: 0 0 6px 3px @green;
+}
+
+.catalog-modal__button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
+}
