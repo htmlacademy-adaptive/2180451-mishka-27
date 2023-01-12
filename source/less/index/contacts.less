@@ -44,7 +44,7 @@
     margin-bottom: 49px;
     display: grid;
     width: 668px;
-    grid-template-columns: max-content auto max-content 257px;
+    grid-template-columns: 55px auto 55px 257px;
     grid-template-rows: min-content;
     column-gap: 25px;
     font-size: 17px;
@@ -53,7 +53,7 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 54px;
     display: grid;
-    grid-template-columns: minmax(54px, 90px) max-content;
+    grid-template-columns: minmax(54px, 90px) 220px;
     grid-template-rows: repeat(3, min-content);
     gap: 30px 23px;
     width: 292px;
@@ -91,7 +91,7 @@
   }
 }
 
-.contacts__map {
+.contacts__map-wrapper {
   margin-bottom: 42px;
   display: block;
   position: relative;
@@ -116,6 +116,15 @@
     min-width: 527px;
     height: 457px;
   }
+}
+
+.contacts__map {
+  display: block;
+  margin: 0 auto;
+}
+
+.contacts__map--js {
+  display: none;
 }
 
 .contacts__button {

@@ -40,9 +40,9 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-  return gulp.src('source/js/scripts.js')
+  return gulp.src('source/js/*.js')
   .pipe(terser())
-  .pipe(rename('scripts.min.js'))
+  // .pipe(rename('scripts.min.js'))
   .pipe(gulp.dest('build/js'));
 }
 
@@ -72,7 +72,7 @@ const createWebP = () => {
 // SVG
 
 const svg = () =>
-  gulp.src(['source/img/*.svg', '!source/img/icon/*.svg'])
+  gulp.src(['source/img/**/*.svg', '!source/img/icon/*.svg'])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 
