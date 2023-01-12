@@ -38,20 +38,20 @@
           </ul>
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <button class="user-list__button user-list__button--search" type="button">
+              <a class="user-list__button user-list__button--search" href="#">
                 <svg class="user-list__button-search-icon" width="18" height="18">
                   <use href="img/icon/sprite.svg#search-icon"></use>
                 </svg>
                 <span class="user-list__button-search-text">Поиск по сайту</span>
-              </button>
+              </a>
             </li>
             <li class="user-list__item">
-              <button class="user-list__button user-list__button--basket" type="button">
+              <a class="user-list__button user-list__button--basket" href="#">
                 <svg class="user-list__button-basket-icon" width="21" height="18">
                   <use href="img/icon/sprite.svg#basket-icon"></use>
                 </svg>
                 <span class="user-list__button-basket-text">Корзина: пока пуста</span>
-              </button>
+              </a>
             </li>
           </ul>
           <ul class="main-nav__news-sale-list">
@@ -155,7 +155,17 @@
           <dt class="contacts__item">адрес:</dt>
           <dd class="contacts__item">г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101</dd>
         </dl>
-        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac9d160f36ec0489b86878a2a4715f73e935c8aae9e664c87bf81a87b99a9b01f&amp;source=constructor"></iframe>
+        <div id="ymap" class="contacts__map-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/index-img/map-desktop.webp 1x, img/index-img/map-desktop@2x.webp 2x" width="527" height="457">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-img/map-tablet.webp 1x, img/index-img/map-tablet@2x.webp 2x" width="768" height="457">
+            <source type="image/webp" srcset="img/index-img/map-mobile.webp 1x, img/index-img/map-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1150px)" srcset="img/index-img/map-desktop.jpg 1x, img/index-img/map-desktop@2x.jpg 2x" width="527" height="457">
+            <source media="(min-width: 768px)" srcset="img/index-img/map-tablet.jpg 1x, img/index-img/map-tablet@2x.jpg 2x" width="768" height="457">
+            <img class="contacts__map" src="img/index-img/map-mobile.jpg" srcset="img/index-img/map-mobile@2x.jpg 2x" width="320" height="454" alt="Три вязанные двухцветные корзинки положенные друг в друга.">
+          </picture>
+        </div>
         <a class="button-primary contacts__button" href="#">Напишите нам</a>
       </div>
     </section>
@@ -239,6 +249,8 @@
     </div>
   </div>
 
-  <script src="./js/scripts.min.js"></script>
+  <script src="./js/scripts.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=23d48498-ab81-4f67-a5eb-81a0f1b429a7&lang=ru_RU"></script>
+  <script src="./js/ymap.js"></script>
 </body>
 </html>

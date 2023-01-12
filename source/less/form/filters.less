@@ -46,7 +46,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding: 66px 0 50px 0;
+      padding: 50px 0 50px 0;
     }
   }
 }
@@ -124,6 +124,16 @@
     position: absolute;
     top: 0;
     left: 0;
+
+    &--phone,
+    &--email {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &--wishes {
+      transform: translateY(100%);
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -145,7 +155,6 @@
 .filters__label {
   @media (min-width: @tablet-width) {
     grid-column: 2/3;
-    margin-top: -19px;
   }
 }
 
@@ -154,7 +163,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding: 66px 50px 24px;
+    padding: 50px 50px 24px;
     background-color: #f1f1f1;
   }
 
@@ -175,7 +184,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding: 13px 55px 14px 18px;
+    padding: 13px 55px 12px 18px;
     box-sizing: border-box;
     background: url("../img/phone-icon.svg") no-repeat right 26px top 14px;
   }
@@ -190,13 +199,13 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding: 18px 50px 50px;
+    padding: 0 50px 50px;
     background-color: #f1f1f1;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
-    padding: 18px 225px 0 100px;
+    padding: 0 225px 0 100px;
   }
 }
 
@@ -211,7 +220,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding: 12px 55px 13px 18px;
+    padding: 12px 55px 12px 18px;
     box-sizing: border-box;
     background: url("../img/mail-icon.svg") no-repeat right 22px top 17px;
   }
@@ -223,11 +232,11 @@
 
 .filters__fieldset--wishes {
   @media (min-width: @tablet-width) {
-    padding: 69px 50px 48px;
+    padding: 50px 50px 48px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 69px 225px 45px 100px;
+    padding: 50px 225px 45px 100px;
   }
 }
 
