@@ -20,7 +20,7 @@ function init() {
     iconLayout: "default#image",
     iconImageHref: "img/index-img/map-pin.svg",
     iconImageSize: [67, 100],
-    iconImageOffset: [-32, -100]
+    iconImageOffset: [-31, -100]
   });
   myMap.geoObjects.add(myPlacemark);
   myMap.options.set("scrollZoomSpeed", 1);
